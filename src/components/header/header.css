@@ -1,0 +1,42 @@
+.header {
+  margin-top: 110px;
+  width: 100%;
+  aspect-ratio: 25/9;
+  background-position: center;
+  background-position-y: 50px;
+  background-size: auto;
+  /* background-size: cover; */
+  background-image: url("https://app-blog-api.herokuapp.com/images/girl.jpg");
+  background-attachment: fixed;
+  position: relative;
+}
+
+.headerTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lora", serif;
+  color: #444;
+  /* position: absolute; */
+  /* top: 10%; */
+}
+
+.headerTitleSm {
+  position: absolute;
+  top: -75px;
+  font-size: 20px;
+}
+
+.headerTitleLg {
+  position: absolute;
+  top: -60px;
+  font-size: 100px;
+}
+
+.headerImg {
+  width: 100%;
+  /* height: 450px; */
+  margin-top: 80px;
+  object-fit: cover;
+  aspect-ratio: 25/9;
+}

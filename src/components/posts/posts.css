@@ -1,0 +1,10 @@
+.posts{
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.noPostFound {
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
+}
