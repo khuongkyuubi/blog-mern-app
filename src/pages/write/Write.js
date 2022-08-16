@@ -27,7 +27,7 @@ function Write() {
   useEffect(() => {
     const getCategoris = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/categories`);
+        const res = await axios.get(`${process.env.REACT_APP_API_ENDPOINT}/categories`);
         setCategories(res.data);
         setCheckedState(
           // @ts-ignore
