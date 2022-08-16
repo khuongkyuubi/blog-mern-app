@@ -71,6 +71,15 @@ function SinglePost() {
         desc,
         photo: filename || post?.["photo"],
       });
+      try {
+        const res = await axios.get(`${AF}/posts/${path}`);
+        setPost(res.data);
+        setTitle(res.data.title);
+        setDesc(res.data.desc);
+      } catch (error) {
+        console.log(error);
+      }
+
       setUpdateMode(false);
     } catch (error) {
       console.log(error);
